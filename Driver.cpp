@@ -65,6 +65,10 @@ int Driver::getAge(){
     return age;
 }
 
+int Driver::getLicenseNum(){
+    return licenseNum;
+}
+
 string Driver::getExperienceCategory(){
     if(yrsOfExp <= 5){
         return "New driver";

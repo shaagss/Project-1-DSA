@@ -9,10 +9,17 @@ struct HashNode{
 
 class HashTable{
     private:
+    HashNode** table;
     int tableSize;
+    int Hash(int licenseNum);
 
     public:
+    HashTable(int size);
+    ~HashTable();
 
+    void insert(Driver inDriver);
+    Driver* search(int licenseNum);
+    bool remove(int licenseNum);
 };
 
 

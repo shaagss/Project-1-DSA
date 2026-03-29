@@ -54,6 +54,7 @@ class Driver{
         void setMedicalConditions(string medicalConditions);
 
         int getAge();
+        int getLicenseNum();
 
         string getExperienceCategory();
 
